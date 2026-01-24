@@ -1,26 +1,19 @@
-// Toggle Menu Mobile
-function toggleMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-}
-
-// Close menu when clicking on a link
-document.querySelectorAll('.nav-list a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.querySelector('.nav').classList.remove('active');
-    });
+// Mudança de estado do Header no Scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 50) {
+        header.style.padding = '0.8rem 0';
+        header.style.backgroundColor = '#ffffff';
+    } else {
+        header.style.padding = '1.2rem 0';
+        header.style.backgroundColor = 'rgba(251, 249, 244, 0.98)';
+    }
 });
 
-// Scroll Reveal Effect (Simples e Leve)
-const observerOptions = { threshold: 0.1 };
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
+// Garante que o texto do botão de agendamento seja carregado corretamente
+document.addEventListener('DOMContentLoaded', () => {
+    const navBtn = document.querySelector('.btn-small');
+    if (navBtn && navBtn.innerText.trim() === "") {
+        navBtn.innerText = "Agendar Consulta";
+    }
 });

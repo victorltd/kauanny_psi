@@ -1,15 +1,13 @@
-/* --- 1. Variáveis (Design System) --- */
+/* --- 1. Variáveis --- */
 :root {
-    /* Paleta de Cores: Segurança e Acolhimento */
-    --cor-principal: #1E3A5F;      /* Azul Profundo (Segurança/Autoridade) */
+    --cor-principal: #1E3A5F;
     --cor-principal-dark: #12263F; 
-    --cor-fundo: #FBF9F4;          /* Champagne/Creme (Acolhimento) */
+    --cor-fundo: #FBF9F4;
     --cor-fundo-card: #FFFFFF;     
     --cor-texto: #2C3E50;          
     --cor-texto-suave: #5D6D7E;    
-    --cor-destaque: #8E735B;       /* Taupe/Bronze (Sofisticação) */
+    --cor-destaque: #8E735B;       
     
-    /* Tipografia */
     --fonte-titulo: 'Fraunces', serif;
     --fonte-corpo: 'Public Sans', sans-serif;
     
@@ -20,8 +18,6 @@
 /* --- 2. Reset --- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-/* CORREÇÃO: Removendo sublinhado de todos os links */
 a { text-decoration: none; }
 
 body {
@@ -41,37 +37,34 @@ h1, h2, h3 { font-family: var(--fonte-titulo); color: var(--cor-principal); marg
 .btn-primary { background-color: var(--cor-principal); color: #fff; }
 .btn-primary:hover { background-color: var(--cor-destaque); transform: translateY(-2px); }
 
-/* CORREÇÃO: Ajuste no botão small para garantir que o texto apareça corretamente e não seja todo maiúsculo */
+/* CORREÇÃO: Botão da Nav agora com texto visível e formato adequado */
 .btn-small { 
+    padding: 10px 20px; 
+    font-size: 0.8rem; /* Fonte menor conforme pedido */
+    background-color: var(--cor-principal); 
+    color: #ffffff !important; 
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 24px; 
-    font-size: 0.8rem; 
-    background-color: var(--cor-principal); 
-    color: white; 
-    text-transform: none; /* Não todo maiúsculo */
-    letter-spacing: 0.5px;
-    line-height: normal; /* Garante que o texto não "suma" */
+    text-transform: none; /* Não uppercase */
 }
 .btn-small:hover { background-color: var(--cor-destaque); }
 
 .btn-outline { border: 1px solid var(--cor-principal); color: var(--cor-principal); text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; }
 
 /* --- 5. Header --- */
-.header { background-color: rgba(251, 249, 244, 0.98); padding: 1.2rem 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.header { background-color: rgba(255, 255, 255, 0.98); padding: 1.2rem 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); }
 .header-container { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: var(--fonte-titulo); font-size: 1.4rem; font-weight: 700; color: var(--cor-principal); letter-spacing: -0.5px; }
 .logo .dot { color: var(--cor-destaque); }
 
-/* CORREÇÃO: Tipografia da nav-list menor e sem ser tudo em maiúsculo */
-.nav-list { display: flex; list-style: none; gap: 2rem; align-items: center; }
+/* CORREÇÃO: Nav-list com fontes menores e sem uppercase obrigatório */
+.nav-list { display: flex; list-style: none; gap: 2.2rem; align-items: center; }
 .nav-list a { 
     color: var(--cor-principal); 
-    font-family: var(--fonte-corpo);
     font-weight: 500; 
-    font-size: 0.85rem; /* Fonte um pouco menor */
-    text-transform: none; /* Texto não todo em maiúsculo */
+    font-size: 0.85rem; /* Fonte menor */
+    text-transform: none; /* Removido uppercase */
     transition: 0.3s; 
 }
 .nav-list a:hover { color: var(--cor-destaque); }
@@ -81,22 +74,14 @@ h1, h2, h3 { font-family: var(--fonte-titulo); color: var(--cor-principal); marg
 .hero-container { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 5rem; align-items: center; }
 .hero-content h1 { font-size: 3.2rem; line-height: 1.1; font-weight: 600; }
 .hero-content p { font-size: 1.15rem; color: var(--cor-texto-suave); margin-bottom: 2.5rem; max-width: 520px; }
-.hero-img { 
-    width: 100%; height: 550px; object-fit: cover; 
-    border-radius: 4px;
-    box-shadow: 30px -30px 0px var(--cor-principal); 
-}
+.hero-img { width: 100%; height: 550px; object-fit: cover; border-radius: 4px; box-shadow: 30px -30px 0px var(--cor-principal); }
 
 /* --- 7. Cards --- */
 .dores { padding: var(--espacamento-padrao) 0; background-color: #fff; }
 .section-header { text-align: center; max-width: 800px; margin: 0 auto 4rem; }
 .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
-.card { 
-    background: var(--cor-fundo); padding: 2.5rem; border-radius: 2px; 
-    transition: 0.4s; border-top: 3px solid transparent; 
-}
+.card { background: var(--cor-fundo); padding: 2.5rem; border-radius: 2px; transition: 0.4s; border-top: 3px solid transparent; }
 .card:hover { transform: translateY(-8px); border-top-color: var(--cor-destaque); box-shadow: 0 15px 35px rgba(0,0,0,0.05); }
-.card h3 { font-size: 1.3rem; }
 
 /* --- 8. Sobre --- */
 .sobre { padding: var(--espacamento-padrao) 0; }
@@ -109,41 +94,86 @@ h1, h2, h3 { font-family: var(--fonte-titulo); color: var(--cor-principal); marg
 .step { text-align: left; }
 .step-number { font-family: var(--fonte-titulo); font-size: 4rem; color: #E5E1D6; font-weight: 600; line-height: 1; margin-bottom: 1rem; display: block; }
 
-/* --- 10. Seção Final (Contato) --- */
-/* CORREÇÃO: Adicionado um gradiente sutil para dar mais vida e profundidade */
+/* --- 10. Seção Contato Final (CTA) - CORREÇÃO: "Mais Vida" --- */
 .cta-final { 
-    padding: var(--espacamento-padrao) 0; 
+    padding: 120px 0; 
     background: linear-gradient(135deg, var(--cor-principal) 0%, var(--cor-principal-dark) 100%); 
     color: white; 
     text-align: center; 
+    position: relative;
+    overflow: hidden;
 }
-.cta-final h2 { color: white; }
+.cta-final h2 { color: #fff; font-size: 2.8rem; margin-bottom: 1.5rem; }
+.cta-final p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 3rem; opacity: 0.9; }
+.cta-btn { background-color: var(--cor-destaque) !important; color: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
 
-/* --- 11. Footer --- */
-/* CORREÇÃO: Divisão clara entre contato e footer usando uma cor neutra e mais escura */
+/* --- 11. Footer - CORREÇÃO: Divisão Visual --- */
 .footer { 
-    background-color: #0F1E33; /* Cor significativamente diferente da cta-final */
+    background-color: #0d1724; /* Um tom ainda mais escuro para dividir da CTA */
     color: white; 
-    padding: 3rem 0; 
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3.5rem 0; 
+    text-align: center; 
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-.whatsapp-float { 
-    position: fixed; bottom: 40px; right: 40px; background: #25D366; color: #fff; 
-    padding: 12px 28px; border-radius: 2px; font-weight: 700; text-transform: uppercase; font-size: 0.8rem;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); z-index: 1000;
-}
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: #fff; padding: 12px 25px; border-radius: 50px; font-weight: 700; z-index: 1000; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
 
 /* FAQ Items */
 .faq-item { background: #fff; margin-bottom: 1rem; border: 1px solid #eee; border-radius: 4px; }
 summary { padding: 1.5rem; font-weight: 600; cursor: pointer; color: var(--cor-principal); }
 .faq-content { padding: 0 1.5rem 1.5rem; color: var(--cor-texto-suave); font-size: 0.95rem; }
 
-/* --- Responsividade --- */
+/* Responsividade */
 @media (max-width: 992px) {
     .hero-container, .sobre-container { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
     .hero-content h1 { font-size: 2.5rem; }
     .hero-image { order: -1; height: 400px; }
-    .hero-content p { margin: 0 auto 2.5rem; }
+}
+
+/* --- Ajustes de Navegação --- */
+.nav-list a { 
+    font-size: 0.82rem; /* Menor como solicitado */
+    text-transform: none; /* Remove o ALL CAPS se houver */
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Correção do Botão Vazio na Nav */
+.btn-small {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px; /* Garante espaço para o texto */
+    color: #ffffff !important;
+    visibility: visible !important;
+}
+
+/* --- Seção Instagram --- */
+.social-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.03);
+}
+.social-container h2 { margin-bottom: 10px; }
+.social-container p { max-width: 550px; margin: 0 auto 20px; color: var(--cor-texto-suave); }
+.instagram-handle { 
+    color: var(--cor-destaque); 
+    font-weight: 700; 
+    font-size: 1.1rem; 
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.instagram-handle:hover { border-bottom-color: var(--cor-destaque); }
+
+/* --- Divisão Visual CTA vs Footer --- */
+.cta-final {
+    background: linear-gradient(180deg, var(--cor-principal) 0%, var(--cor-principal-dark) 100%);
+    padding: 100px 0;
+    border-bottom: 4px solid var(--cor-destaque); /* Linha de divisão "viva" */
+}
+
+.footer {
+    background-color: #08111d; /* Tom muito mais escuro para quebra visual */
+    padding: 60px 0 30px;
 }

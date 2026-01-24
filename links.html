@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | Kauanny Araujo Psicologia</title>
+    
+    <meta name="description" content="Links úteis para agendamento e informações sobre a psicoterapia com Kauanny Araujo.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231E3A5F%22/><text x=%2250%%22 y=%2255%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-family=%22Fraunces, serif%22 font-size=%2255%22 font-weight=%22600%22 fill=%22%23FBF9F4%22>KA</text></svg>"></head>
+
+    <style>
+        :root {
+            --cor-principal: #1E3A5F;
+            --cor-fundo: #FBF9F4;
+            --cor-texto: #2C3E50;
+            --cor-texto-suave: #5D6D7E;
+            --cor-destaque: #8E735B;
+            --fonte-titulo: 'Fraunces', serif;
+            --fonte-corpo: 'Public Sans', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+
+        body {
+            background-color: var(--cor-fundo);
+            font-family: var(--fonte-corpo);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: var(--cor-texto);
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .links-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            margin-bottom: 1.2rem;
+        }
+
+        .links-header h1 {
+            font-family: var(--fonte-titulo);
+            font-size: 1.5rem;
+            color: var(--cor-principal);
+            margin-bottom: 0.3rem;
+        }
+
+        .links-header p {
+            font-size: 0.85rem;
+            color: var(--cor-texto-suave);
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-button {
+            background-color: white;
+            padding: 16px;
+            border-radius: 6px;
+            color: var(--cor-principal);
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+            display: block;
+            border: 1px solid rgba(30, 58, 95, 0.05);
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            background-color: var(--cor-principal);
+            color: white;
+        }
+
+        /* Destaque para o CTA principal */
+        .link-highlight {
+            background-color: var(--cor-destaque);
+            color: white;
+            border: none;
+        }
+
+        .link-highlight:hover {
+            background-color: var(--cor-principal);
+        }
+
+        .links-footer {
+            margin-top: 3.5rem;
+            font-size: 0.75rem;
+            opacity: 0.6;
+            color: var(--cor-texto-suave);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="links-container">
+        <header class="links-header">
+            <img src="assets/img/kauanny-sobre.png" alt="Kauanny Araujo">
+            <h1>Kauanny Araujo</h1>
+            <p>Psicóloga Clínica • CRP 02/30803</p>
+        </header>
+
+        <main class="links-list">
+            <a href="https://wa.me/5500000000000?text=Olá%20Kauanny!%20Vim%20pela%20Bio%20e%20gostaria%20de%20agendar%20uma%20conversa." 
+               class="link-button link-highlight">
+                Agendar Consulta (WhatsApp)
+            </a>
+
+            <a href="index.html" class="link-button">
+                Conhecer Site Oficial
+            </a>
+
+            <a href="index.html#como-funciona" class="link-button">
+                Como funciona o processo?
+            </a>
+
+            <a href="index.html#faq" class="link-button">
+                Dúvidas Frequentes (FAQ)
+            </a>
+            
+            <a href="https://instagram.com/kauannyaraujo.psi" class="link-button" target="_blank">
+                Acompanhe no Instagram
+            </a>
+        </main>
+
+        <footer class="links-footer">
+            <p>&copy; 2026 Kauanny Araujo Psicologia</p>
+        </footer>
+    </div>
+
+</body>
+</html>

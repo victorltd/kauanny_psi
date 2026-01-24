@@ -12,9 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Public+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
-</head>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231E3A5F%22/><text x=%2250%%22 y=%2255%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-family=%22Fraunces, serif%22 font-size=%2255%22 font-weight=%22600%22 fill=%22%23FBF9F4%22>KA</text></svg>"></head>
 <body>
 
     <header class="header">
@@ -148,6 +149,17 @@
             </div>
         </section>
 
+
+        <section id="social-cta" class="social-section">
+    <div class="container social-container">
+        <div class="social-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--cor-destaque)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </div>
+        <h2>Acompanhe meu dia a dia</h2>
+        <p>No meu Instagram, compartilho reflexões diárias sobre saúde mental, autoconhecimento e bem-estar.</p>
+        <a href="https://instagram.com/kauannyaraujo.psi" target="_blank" class="instagram-handle">@kauannyaraujo.psi</a>
+    </div>
+</section>
         <section id="faq" style="padding: 80px 0; background-color: var(--cor-fundo);">
             <div class="container">
                 <div class="section-header">
@@ -189,23 +201,50 @@
         </section>
 
         <section id="contato" class="cta-final">
-            <div class="container">
+            <div class="container cta-container">
                 <h2>Priorize sua saúde mental.</h2>
-                <p>O primeiro passo para a mudança é buscar ajuda profissional. Vamos conversar?</p>
-                <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary">Ver disponibilidade no WhatsApp</a>
+                <p>O primeiro passo para a mudança é buscar ajuda profissional especializada. Vamos conversar?</p>
+                <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary cta-btn">Ver disponibilidade no WhatsApp</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p><strong>Kauanny Araujo</strong> | Psicóloga Clínica • CRP 02/30803</p>
-            <p style="opacity: 0.7; font-size: 0.8rem; margin-top: 15px;">Este site segue as diretrizes do Código de Ética Profissional do Psicólogo.</p>
+   <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <h3>Kauanny Araujo</h3>
+            <p>Psicóloga Clínica • CRP 02/30803</p>
         </div>
-    </footer>
+        
+        <div class="footer-legal">
+            <p>Este site respeita a Lei Geral de Proteção de Dados (LGPD). As informações enviadas via formulário ou WhatsApp são tratadas com total sigilo e proteção, conforme o Código de Ética Profissional do Psicólogo.</p>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2026 Kauanny Araujo Psicologia. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
 
     <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank">WhatsApp</a>
 
     <script src="assets/js/main.js"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician", 
+      "name": "Kauanny Araujo Psicologia",
+      "image": "assets/img/kauanny-hero.png",
+      "telephone": "+5500000000000", 
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Online",
+        "addressCountry": "BR"
+      },
+      "medicalSpecialty": "Psychology",
+      "priceRange": "$$"
+    }
+    </script>
 </body>
 </html>
