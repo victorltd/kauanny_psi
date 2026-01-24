@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Link para o seu sitemap
-Sitemap: https://kauannyaraujo.com.br/sitemap.xml
+Sitemap: https://Kauanyaraujo.com.br/sitemap.xml
