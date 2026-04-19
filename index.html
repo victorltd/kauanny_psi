@@ -1,254 +1,1201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- ===== META TAGS BÁSICAS ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kauany Araujo - Psicóloga CRP 02/30803">
     
-    <title>Kauany Araujo | Psicóloga Clínica - CRP 02/30803</title>
-    <meta name="description" content="Psicoterapia fundamentada em ciência e empatia com Kauany Araujo. Especialista em Terapias Contextuais para jovens e adultos. Atendimento online.">
+    <!-- ===== SEO PRINCIPAL ===== -->
+    <title>Psicóloga Kauany Araujo | Terapia ACT em Petrolina-PE e Online - CRP 02/30803</title>
+    <meta name="description" content="Psicóloga Kauany Araujo (CRP 02/30803) - Especialista em Terapia de Aceitação e Compromisso (ACT) para ansiedade, autoconhecimento e regulação emocional. Atendimento online para todo Brasil e presencial em Petrolina-PE.">
+    <meta name="keywords" content="psicóloga Petrolina, psicóloga online, terapia ACT, terapia de aceitação e compromisso, ansiedade, autoconhecimento, saúde mental, psicoterapia online, CRP 02/30803, terapias contextuais">
+    <link rel="canonical" href="https://psikauanyaraujo.github.io/">
 
+    <!-- ===== OPEN GRAPH (Facebook/WhatsApp) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psikauanyaraujo.github.io/">
+    <meta property="og:title" content="Psicóloga Kauany Araujo | Terapia ACT - CRP 02/30803">
+    <meta property="og:description" content="Psicoterapia com base científica e acolhimento humano. Especialista em Terapias Contextuais para jovens e adultos. Atendimento online e presencial.">
+    <meta property="og:image" content="https://www.kauanyaraujo.com.br/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Kauany Araujo Psicologia">
+
+    <!-- ===== TWITTER CARDS ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Psicóloga Kauany Araujo | Terapia ACT - CRP 02/30803">
+    <meta name="twitter:description" content="Psicoterapia com base científica e acolhimento. Atendimento online e presencial em Petrolina-PE.">
+    <meta name="twitter:image" content="https://www.kauanyaraujo.com.br/assets/img/og-image.jpg">
+
+    <!-- ===== FONTES ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Public+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ===== FAVICON ===== -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-    
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231E3A5F%22/><text x=%2250%%22 y=%2255%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-family=%22Fraunces, serif%22 font-size=%2255%22 font-weight=%22600%22 fill=%22%23FBF9F4%22>KA</text></svg>"></head>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#1E3A5F">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
 <body>
+    <!-- ===== SKIP LINK (Acessibilidade) ===== -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-    <header class="header">
-        <div class="container header-container">
-           <div class="logo">
-                Kauany Araujo<span class="dot">.</span>
-            </div>
+    <!-- ===== HEADER ===== -->
+    <header class="header" role="banner">
+        <div class="container header__container">
+            <a href="#home" class="header__logo" aria-label="Kauany Araujo - Voltar ao início">
+                Kauany Araujo<span class="header__logo-dot" aria-hidden="true">.</span>
+            </a>
             
-            <div class="mobile-menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+            <button 
+                class="header__mobile-btn" 
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span class="header__hamburger" aria-hidden="true">
+                    <span class="header__bar"></span>
+                    <span class="header__bar"></span>
+                    <span class="header__bar"></span>
+                </span>
+            </button>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home" onclick="toggleMenu()">Início</a></li>
-                    <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-                    <li><a href="#historia" onclick="toggleMenu()">Trajetória</a></li>
-                    <li><a href="#como-funciona" onclick="toggleMenu()">O Processo</a></li>
-                    <li><a href="#contato" class="btn btn-small" onclick="toggleMenu()">Agendar Consulta</a></li>
+            <nav id="main-nav" class="header__nav" role="navigation" aria-label="Menu principal">
+                <ul class="header__nav-list">
+                    <li><a href="#home" class="header__nav-link">Início</a></li>
+                    <li><a href="#sobre" class="header__nav-link">Sobre</a></li>
+                    <li><a href="#formacao" class="header__nav-link">Formação</a></li>
+                    <li><a href="#processo" class="header__nav-link">Como Funciona</a></li>
+                    <li><a href="#faq" class="header__nav-link">Dúvidas</a></li>
+                    <li>
+                        <a href="#contato" class="btn btn--nav">Agendar Consulta</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1>Sua história merece um espaço de escuta e cuidado.</h1>
-                    <p>Auxilio você a compreender suas emoções e a construir as mudanças que deseja através das Terapias Contextuais Comportamentais, unindo acolhimento humano e rigor científico.</p>
-                    <a href="https://wa.me/558788270794?text=Olá, Kauany! Visitei seu site e gostaria de saber mais sobre o processo terapêutico." target="_blank" class="btn btn-primary">Falar com a psicóloga</a>
-                </div>
-                <div class="hero-image">
-                    <img src="assets/img/IMG_4747.JPG.jpeg" alt="Psicóloga Kauany Araujo" class="hero-img">
-                </div>
-            </div>
-        </section>
-
-        <section id="dores" class="dores">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Em que momentos a terapia se faz necessária?</h2>
-                </div>
-                <div class="cards-grid">
-                    <article class="card">
-                        <h3>Ansiedade e Insegurança</h3>
-                        <p>Quando o medo do futuro ou a dúvida sobre sua capacidade travam suas decisões e o seu presente.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Gestão do Estresse</h3>
-                        <p>Para quem sente o peso da sobrecarga acadêmica ou profissional afetando a saúde mental.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Relacionamentos</h3>
-                        <p>Desenvolvimento de habilidades para conexões mais autênticas e saudáveis com os outros e consigo.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Autoconhecimento</h3>
-                        <p>Investigar seus padrões e construir uma vida com mais sentido e alinhada aos seus valores reais.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Instabilidade Emocional</h3>
-                        <p>Aprender a manejar emoções intensas, desenvolvendo maior flexibilidade psicológica.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Procrastinação e Foco</h3>
-                        <p>Estratégias para lidar com bloqueios que impedem você de realizar o que realmente importa.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre" class="sobre">
-            <div class="container sobre-container">
-                <div class="sobre-image">
-                    <img src="assets/img/IMG_4742.JPG.jpeg" alt="Psicóloga Kauany Araujo" class="sobre-img">
-                </div>
-                <div class="sobre-content">
-                    <h2>Prazer, sou Kauany Araújo, a psicóloga que irá te acompanhar</h2>
-                    <p>Meu compromisso é criar um ambiente terapêutico de respeito e empatia, onde sua história é ouvida com atenção e cuidado.</p>
-                    <p>Utilizo a abordagem das <strong>Terapias Contextuais Comportamentais</strong> para te auxiliar a compreender suas emoções e a construir as mudanças que você deseja ver na sua vida.</p>
-                    <p style="font-size: 0.9rem; color: var(--cor-principal); font-weight: 600;">CRP 02/30803</p>
-                    <a href="#historia" class="btn btn-outline">Conheça minha trajetória</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="historia" style="padding: 80px 0; background-color: #fff;">
-            <div class="container" style="max-width: 850px; text-align: left;">
-                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-                    <h2 style="font-size: 2.2rem; color: var(--cor-principal-dark);">Ciência e Humanidade</h2>
-                </div>
-                <div style="font-size: 1.1rem; color: var(--cor-texto); line-height: 1.8;">
-                  <p style="margin-bottom: 1.5rem;">
-                Sou formada e mestranda pela <strong>Universidade Federal do Vale do São Francisco (UNIVASF)</strong> e pós-graduanda pela <strong>CBI of Miami</strong>. Minha prática clínica é construída sobre uma base acadêmica sólida e o compromisso contínuo com a atualização científica.
-            </p>
-
-            <p style="margin-bottom: 1.5rem;">
-                Minha atuação é pautada nas <strong>Terapias Contextuais Comportamentais</strong>, especialmente na Terapia de Aceitação e Compromisso (ACT). Em sessão, buscaremos juntos desenvolver a flexibilidade psicológica e uma maior conexão com o momento presente e com seus valores, mesmo diante de pensamentos e emoções difíceis e conflitantes.
-            </p>
-
-            <p style="margin-bottom: 1.5rem;">
-                Aqui, você encontrará um ambiente livre de julgamentos, preparado para acolher sua história. Cada processo é conduzido de forma única e individualizada, sendo adaptado às suas necessidades e objetivos específicos.
-            </p>
-
-            <p style="margin-bottom: 1.5rem;">
-                Atendo de forma <strong>online e presencial em Petrolina-PE</strong>; você escolhe a modalidade que melhor se adapta à sua rotina. Além de atender adultos, também realizo orientação parental, atendimentos de crianças com transtornos do neurodesenvolvimento e identificação de possíveis atrasos no desenvolvimento.
-            </p>
-            
-            <p>
-                Acredito na psicologia como um caminho para uma vida mais autêntica e significativa. Vamos dar esse passo juntos?
-            </p>
-        </div>
-    </div>
-</section>
-
-        <section id="como-funciona" class="processo">
-            <div class="container">
-                <div class="section-header">
-                    <h2>O Caminho Terapêutico</h2>
-                </div>
-                <div class="steps-grid">
-                    <div class="step">
-                        <span class="step-number">01</span>
-                        <h3>Escuta Inicial</h3>
-                        <p>Um momento para entendermos suas demandas e alinharmos como posso te ajudar.</p>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+        
+        <!-- ===== HERO SECTION ===== -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <p class="hero__crp">
+                        <span class="badge badge--primary">CRP 02/30803</span>
+                    </p>
+                    <h1 id="hero-title" class="hero__title">
+                        Sua história merece um espaço de escuta e cuidado.
+                    </h1>
+                    <p class="hero__subtitle">
+                        Auxilio você a compreender suas emoções e a construir as mudanças que deseja através das 
+                        <strong>Terapias Contextuais Comportamentais</strong>, unindo acolhimento humano e rigor científico.
+                    </p>
+                    <div class="hero__cta">
+                        <a 
+                            href="https://wa.me/5587988270794?text=Olá,%20Kauany!%20Visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terapêutico." 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="btn btn--primary btn--lg"
+                            aria-label="Falar com a psicóloga via WhatsApp (abre em nova aba)"
+                        >
+                            <svg class="btn__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Falar com a psicóloga
+                        </a>
                     </div>
-                    <div class="step">
-                        <span class="step-number">02</span>
-                        <h3>Sessões Regulares</h3>
-                        <p>Encontros presenciais ou online semanais focados em desenvolver sua flexibilidade e autonomia.</p>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">03</span>
-                        <h3>Novas Ações</h3>
-                        <p>Transformação real na sua rotina, baseada em objetivos construídos em conjunto.</p>
-                    </div>
+                    <ul class="hero__badges" aria-label="Modalidades de atendimento">
+                        <li class="hero__badge-item">
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Atendimento Online
+                        </li>
+                        <li class="hero__badge-item">
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Presencial em Petrolina-PE
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__image">
+                    <img 
+                        src="assets/img/IMG_4747.JPG.jpeg" 
+                        alt="Psicóloga Kauany Araujo sorrindo em ambiente acolhedor de consultório" 
+                        class="hero__img"
+                        width="500"
+                        height="600"
+                        loading="eager"
+                        fetchpriority="high"
+                    >
                 </div>
             </div>
         </section>
 
-
-        <section id="social-cta" class="social-section">
-    <div class="container social-container">
-        <div class="social-icon">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--cor-destaque)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-        </div>
-        <h2>Acompanhe meu dia a dia</h2>
-        <p>No meu Instagram, compartilho reflexões diárias sobre saúde mental, autoconhecimento e bem-estar.</p>
-        <a href="https://instagram.com/@psikauanyaraujo" target="_blank" class="instagram-handle">@psikauanyaraujo</a>
-    </div>
-</section>
-        <section id="faq" style="padding: 80px 0; background-color: var(--cor-fundo);">
+        <!-- ===== PARA QUEM É ===== -->
+        <section id="para-quem" class="para-quem" aria-labelledby="para-quem-title">
             <div class="container">
-                <div class="section-header">
-                    <h2>Dúvidas Frequentes</h2>
+                <header class="section-header">
+                    <span class="section-header__tag">Para quem é</span>
+                    <h2 id="para-quem-title" class="section-header__title">
+                        Atendo pessoas que buscam mudanças reais
+                    </h2>
+                    <p class="section-header__subtitle">
+                        A terapia é para você que deseja compreender suas emoções e viver de forma mais alinhada aos seus valores.
+                    </p>
+                </header>
+                
+                <ul class="cards-grid cards-grid--3" role="list">
+                    <li class="card card--icon" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Jovens Adultos</h3>
+                        <p class="card__text">Que estão construindo sua identidade e enfrentam desafios de carreira, relacionamentos e propósito.</p>
+                    </li>
+                    
+                    <li class="card card--icon" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Adultos</h3>
+                        <p class="card__text">Que buscam autoconhecimento, equilíbrio emocional e uma vida com mais sentido e autenticidade.</p>
+                    </li>
+                    
+                    <li class="card card--icon" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Pais e Famílias</h3>
+                        <p class="card__text">Que precisam de orientação parental ou acompanhamento de crianças com questões do neurodesenvolvimento.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== IDENTIFICAÇÃO/DORES ===== -->
+        <section id="dores" class="dores" aria-labelledby="dores-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-header__tag">Identificação</span>
+                    <h2 id="dores-title" class="section-header__title">
+                        Em que momentos a terapia pode ajudar?
+                    </h2>
+                    <p class="section-header__subtitle">
+                        Reconhecer que precisa de apoio é o primeiro passo. Veja se você se identifica com alguma dessas situações.
+                    </p>
+                </header>
+                
+                <ul class="cards-grid cards-grid--3" role="list">
+                    <li class="card" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Ansiedade e Preocupação Excessiva</h3>
+                        <p class="card__text">Quando o medo do futuro ou a dúvida sobre sua capacidade dificultam suas decisões e afetam o seu presente.</p>
+                    </li>
+                    
+                    <li class="card" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Sobrecarga e Estresse</h3>
+                        <p class="card__text">Para quem sente o peso da pressão acadêmica ou profissional afetando a saúde mental e qualidade de vida.</p>
+                    </li>
+                    
+                    <li class="card" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Dificuldades nos Relacionamentos</h3>
+                        <p class="card__text">Desenvolvimento de habilidades para conexões mais autênticas e saudáveis com os outros e consigo mesmo.</p>
+                    </li>
+                    
+                    <li class="card" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Busca por Autoconhecimento</h3>
+                        <p class="card__text">Investigar seus padrões e construir uma vida com mais sentido, alinhada aos seus valores pessoais.</p>
+                    </li>
+                    
+                    <li class="card" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Instabilidade Emocional</h3>
+                        <p class="card__text">Aprender a manejar emoções intensas, desenvolvendo maior flexibilidade psicológica no dia a dia.</p>
+                    </li>
+                    
+                    <li class="card" role="listitem">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Procrastinação e Falta de Foco</h3>
+                        <p class="card__text">Estratégias para lidar com bloqueios que dificultam a realização do que realmente importa para você.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE MIM ===== -->
+        <section id="sobre" class="sobre" aria-labelledby="sobre-title">
+            <div class="container sobre__container">
+                <div class="sobre__image">
+                    <img 
+                        src="assets/img/IMG_4742.JPG.jpeg" 
+                        alt="Psicóloga Kauany Araujo em seu consultório, transmitindo acolhimento e profissionalismo" 
+                        class="sobre__img"
+                        width="450"
+                        height="550"
+                        loading="lazy"
+                    >
                 </div>
-                <div class="faq-grid" style="max-width: 800px; margin: 40px auto 0;">
-                    <details class="faq-item">
-                        <summary>Como funcionam as sessões online?</summary>
-                        <div class="faq-content">
-                            <p>As sessões ocorrem por videochamada em plataforma segura e sigilosa. A eficácia é comprovada cientificamente e oferece a conveniência de realizar o atendimento de onde você estiver.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Qual a duração do processo?</summary>
-                        <div class="faq-content">
-                            <p>A psicoterapia não tem um tempo fixo, pois cada pessoa tem seu ritmo. No entanto, trabalhamos com objetivos claros para que você perceba sua evolução ao longo do tempo.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Você aceita planos de saúde?</summary>
-                        <div class="faq-content">
-                            <p>Atendo de forma particular, mas emito recibos para que você possa solicitar o reembolso junto ao seu plano de saúde, caso ele ofereça essa modalidade.</p>
-                        </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Como faço para agendar a primeira consulta?</summary>
-                        <div class="faq-content">
-                            <p>Basta clicar em qualquer botão de agendamento deste site. Você será direcionado para o meu WhatsApp, onde combinaremos o melhor horário.</p>
-                        </div>
-                    </details>
+                <div class="sobre__content">
+                    <header class="section-header section-header--left">
+                        <span class="section-header__tag">Sobre mim</span>
+                        <h2 id="sobre-title" class="section-header__title">
+                            Prazer, sou Kauany Araújo
+                        </h2>
+                    </header>
+                    
+                    <p>
+                        Meu compromisso é criar um ambiente terapêutico de <strong>respeito e empatia</strong>, 
+                        onde sua história é ouvida com atenção e cuidado.
+                    </p>
+                    <p>
+                        Utilizo a abordagem das <strong>Terapias Contextuais Comportamentais</strong>, especialmente 
+                        a <strong>Terapia de Aceitação e Compromisso (ACT)</strong>, para auxiliar você a compreender 
+                        suas emoções e construir as mudanças que deseja ver na sua vida.
+                    </p>
+                    <p>
+                        Aqui, você encontrará um ambiente livre de julgamentos, preparado para acolher sua história. 
+                        Cada processo é conduzido de forma única e individualizada, sendo adaptado às suas necessidades 
+                        e objetivos específicos.
+                    </p>
+                    
+                    <ul class="sobre__highlights" role="list">
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Atendimento online para todo o Brasil</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Presencial em Petrolina-PE</span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Sigilo profissional garantido</span>
+                        </li>
+                    </ul>
+                    
+                    <p class="sobre__crp">
+                        <strong>CRP 02/30803</strong>
+                    </p>
+                    
+                    <a href="#formacao" class="btn btn--outline">
+                        Conheça minha formação
+                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="cta-final">
-            <div class="container cta-container">
-                <h2>Priorize sua saúde mental.</h2>
-                <p>O primeiro passo para a mudança é buscar ajuda profissional especializada. Vamos conversar?</p>
-                <a href="https://wa.me/558788270794?text=Olá, Kauany! Visitei seu site e gostaria de saber mais sobre o processo terapêutico." target="_blank" class="btn btn-primary cta-btn">Ver disponibilidade no WhatsApp</a>
+        <!-- ===== FORMAÇÃO ===== -->
+        <section id="formacao" class="formacao" aria-labelledby="formacao-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-header__tag">Qualificações</span>
+                    <h2 id="formacao-title" class="section-header__title">
+                        Ciência e Humanidade
+                    </h2>
+                    <p class="section-header__subtitle">
+                        Minha prática clínica é construída sobre uma base acadêmica sólida e o compromisso contínuo com a atualização científica.
+                    </p>
+                </header>
+                
+                <div class="formacao__grid">
+                    <div class="formacao__cards">
+                        <article class="formacao-card">
+                            <div class="formacao-card__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </div>
+                            <div class="formacao-card__content">
+                                <span class="formacao-card__type">Graduação</span>
+                                <h3 class="formacao-card__title">Psicologia</h3>
+                                <p class="formacao-card__institution">Universidade Federal do Vale do São Francisco (UNIVASF)</p>
+                            </div>
+                        </article>
+                        
+                        <article class="formacao-card">
+                            <div class="formacao-card__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </div>
+                            <div class="formacao-card__content">
+                                <span class="formacao-card__type">Mestrado</span>
+                                <h3 class="formacao-card__title">Psicologia</h3>
+                                <p class="formacao-card__institution">UNIVASF</p>
+                                <span class="formacao-card__status">Em andamento</span>
+                            </div>
+                        </article>
+                        
+                        <article class="formacao-card">
+                            <div class="formacao-card__icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </div>
+                            <div class="formacao-card__content">
+                                <span class="formacao-card__type">Pós-Graduação</span>
+                                <h3 class="formacao-card__title">Especialização</h3>
+                                <p class="formacao-card__institution">CBI of Miami</p>
+                                <span class="formacao-card__status">Em andamento</span>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <aside class="formacao__sidebar">
+                        <blockquote class="quote">
+                            <svg class="quote__icon" aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                            <p class="quote__text">
+                                Acredito na psicologia como um caminho para uma vida mais autêntica e significativa. 
+                                Vamos dar esse passo juntos?
+                            </p>
+                            <footer class="quote__footer">
+                                <cite class="quote__author">— Kauany Araujo</cite>
+                            </footer>
+                        </blockquote>
+                    </aside>
+                </div>
             </div>
         </section>
+
+        <!-- ===== ABORDAGEM ===== -->
+        <section id="abordagem" class="abordagem" aria-labelledby="abordagem-title">
+            <div class="container abordagem__container">
+                <div class="abordagem__content">
+                    <header class="section-header section-header--left">
+                        <span class="section-header__tag">Metodologia</span>
+                        <h2 id="abordagem-title" class="section-header__title">
+                            Terapia de Aceitação e Compromisso (ACT)
+                        </h2>
+                    </header>
+                    
+                    <p>
+                        A <strong>ACT</strong> é uma abordagem baseada em evidências científicas que faz parte das 
+                        <strong>Terapias Contextuais Comportamentais</strong>. Seu objetivo é ajudar você a desenvolver 
+                        <strong>flexibilidade psicológica</strong>.
+                    </p>
+                    <p>
+                        Em sessão, trabalharemos juntos para que você possa:
+                    </p>
+                    
+                    <ul class="abordagem__list">
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Desenvolver maior conexão com o <strong>momento presente</strong></span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Identificar e agir conforme seus <strong>valores pessoais</strong></span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Lidar com pensamentos e emoções difíceis de forma mais <strong>saudável</strong></span>
+                        </li>
+                        <li>
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Construir uma vida com mais <strong>sentido e autenticidade</strong></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="abordagem__visual">
+                    <div class="abordagem__highlight">
+                        <span class="abordagem__highlight-number">ACT</span>
+                        <span class="abordagem__highlight-text">Acceptance and Commitment Therapy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MITOS SOBRE TERAPIA ===== -->
+        <section id="mitos" class="mitos" aria-labelledby="mitos-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-header__tag">Quebrando tabus</span>
+                    <h2 id="mitos-title" class="section-header__title">
+                        Mitos sobre a psicoterapia
+                    </h2>
+                    <p class="section-header__subtitle">
+                        Ainda existem muitas ideias equivocadas sobre fazer terapia. Vamos esclarecer algumas delas.
+                    </p>
+                </header>
+                
+                <ul class="mitos__grid" role="list">
+                    <li class="mito-card">
+                        <div class="mito-card__header">
+                            <span class="mito-card__icon mito-card__icon--mito" aria-hidden="true">✗</span>
+                            <span class="mito-card__label">Mito</span>
+                        </div>
+                        <p class="mito-card__mito">"Terapia é só para pessoas com problemas graves"</p>
+                        <div class="mito-card__divider"></div>
+                        <div class="mito-card__footer">
+                            <span class="mito-card__icon mito-card__icon--verdade" aria-hidden="true">✓</span>
+                            <p class="mito-card__verdade">A terapia é para qualquer pessoa que deseja autoconhecimento, crescimento pessoal ou lidar melhor com desafios do dia a dia.</p>
+                        </div>
+                    </li>
+                    
+                    <li class="mito-card">
+                        <div class="mito-card__header">
+                            <span class="mito-card__icon mito-card__icon--mito" aria-hidden="true">✗</span>
+                            <span class="mito-card__label">Mito</span>
+                        </div>
+                        <p class="mito-card__mito">"O psicólogo vai me dizer o que fazer"</p>
+                        <div class="mito-card__divider"></div>
+                        <div class="mito-card__footer">
+                            <span class="mito-card__icon mito-card__icon--verdade" aria-hidden="true">✓</span>
+                            <p class="mito-card__verdade">O papel do psicólogo é facilitar seu processo de autoconhecimento e auxiliar você a encontrar suas próprias respostas.</p>
+                        </div>
+                    </li>
+                    
+                    <li class="mito-card">
+                        <div class="mito-card__header">
+                            <span class="mito-card__icon mito-card__icon--mito" aria-hidden="true">✗</span>
+                            <span class="mito-card__label">Mito</span>
+                        </div>
+                        <p class="mito-card__mito">"Terapia online não funciona"</p>
+                        <div class="mito-card__divider"></div>
+                        <div class="mito-card__footer">
+                            <span class="mito-card__icon mito-card__icon--verdade" aria-hidden="true">✓</span>
+                            <p class="mito-card__verdade">Pesquisas científicas comprovam que a terapia online é tão eficaz quanto a presencial para a maioria das demandas.</p>
+                        </div>
+                    </li>
+                    
+                    <li class="mito-card">
+                        <div class="mito-card__header">
+                            <span class="mito-card__icon mito-card__icon--mito" aria-hidden="true">✗</span>
+                            <span class="mito-card__label">Mito</span>
+                        </div>
+                        <p class="mito-card__mito">"Preciso ter um motivo específico para começar"</p>
+                        <div class="mito-card__divider"></div>
+                        <div class="mito-card__footer">
+                            <span class="mito-card__icon mito-card__icon--verdade" aria-hidden="true">✓</span>
+                            <p class="mito-card__verdade">Muitas pessoas iniciam a terapia apenas sentindo que algo não está bem. Juntos, vamos entender e nomear essas sensações.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== DIFERENCIAIS ===== -->
+        <section id="diferenciais" class="diferenciais" aria-labelledby="diferenciais-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-header__tag">Meus compromissos</span>
+                    <h2 id="diferenciais-title" class="section-header__title">
+                        O que você encontra no meu atendimento
+                    </h2>
+                </header>
+                
+                <ul class="diferenciais__grid" role="list">
+                    <li class="diferencial">
+                        <div class="diferencial__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="diferencial__title">Sigilo Absoluto</h3>
+                        <p class="diferencial__text">Tudo o que conversamos é protegido pelo sigilo profissional e pela LGPD.</p>
+                    </li>
+                    
+                    <li class="diferencial">
+                        <div class="diferencial__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="diferencial__title">Base Científica</h3>
+                        <p class="diferencial__text">Utilizo técnicas com eficácia comprovada por pesquisas científicas.</p>
+                    </li>
+                    
+                    <li class="diferencial">
+                        <div class="diferencial__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                        <h3 class="diferencial__title">Ambiente Acolhedor</h3>
+                        <p class="diferencial__text">Um espaço livre de julgamentos para você ser quem realmente é.</p>
+                    </li>
+                    
+                    <li class="diferencial">
+                        <div class="diferencial__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="diferencial__title">Atendimento Personalizado</h3>
+                        <p class="diferencial__text">Cada processo é único e adaptado às suas necessidades específicas.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== COMO FUNCIONA ===== -->
+        <section id="processo" class="processo" aria-labelledby="processo-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-header__tag">Passo a passo</span>
+                    <h2 id="processo-title" class="section-header__title">
+                        O Caminho Terapêutico
+                    </h2>
+                    <p class="section-header__subtitle">
+                        Um processo construído em parceria, respeitando seu ritmo e suas necessidades.
+                    </p>
+                </header>
+                
+                <ol class="steps" role="list">
+                    <li class="step">
+                        <div class="step__number" aria-hidden="true">01</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Primeiro Contato</h3>
+                            <p class="step__text">
+                                Você entra em contato pelo WhatsApp e agendamos nossa primeira sessão. 
+                                É um momento para conhecer suas demandas e esclarecer dúvidas sobre o processo.
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step__number" aria-hidden="true">02</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Sessões Regulares</h3>
+                            <p class="step__text">
+                                Encontros semanais (online ou presenciais) com duração de 50 minutos, 
+                                focados em desenvolver sua flexibilidade psicológica e autonomia emocional.
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="step">
+                        <div class="step__number" aria-hidden="true">03</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Construção de Mudanças</h3>
+                            <p class="step__text">
+                                Juntos, construiremos transformações reais na sua rotina, baseadas em 
+                                objetivos claros e alinhados aos seus valores pessoais.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section id="faq" class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-header__tag">Tire suas dúvidas</span>
+                    <h2 id="faq-title" class="section-header__title">
+                        Perguntas Frequentes
+                    </h2>
+                </header>
+                
+                <div class="faq__list" role="list">
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-1"
+                            >
+                                <span class="faq-item__question">Como funcionam as sessões online?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-1" class="faq-item__content" hidden>
+                            <p>
+                                As sessões ocorrem por videochamada em plataforma segura e sigilosa. 
+                                A eficácia do atendimento online é comprovada cientificamente e oferece 
+                                a conveniência de realizar a sessão de onde você estiver, mantendo a 
+                                mesma qualidade do atendimento presencial.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-2"
+                            >
+                                <span class="faq-item__question">Qual a duração do processo terapêutico?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-2" class="faq-item__content" hidden>
+                            <p>
+                                A psicoterapia não tem um tempo fixo, pois cada pessoa tem seu ritmo 
+                                e necessidades específicas. No entanto, trabalhamos com objetivos 
+                                claros para que você perceba sua evolução ao longo do tempo. 
+                                A duração é avaliada e decidida em conjunto durante o processo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-3"
+                            >
+                                <span class="faq-item__question">Você aceita planos de saúde?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-3" class="faq-item__content" hidden>
+                            <p>
+                                Atendo de forma particular, mas emito recibos oficiais para que você 
+                                possa solicitar o reembolso junto ao seu plano de saúde, caso ele 
+                                ofereça essa modalidade. Entre em contato para mais informações 
+                                sobre valores e formas de pagamento.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-4"
+                            >
+                                <span class="faq-item__question">Como faço para agendar a primeira consulta?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-4" class="faq-item__content" hidden>
+                            <p>
+                                Basta clicar em qualquer botão de agendamento deste site. 
+                                Você será direcionado para o meu WhatsApp, onde combinaremos 
+                                o melhor horário para nossa primeira conversa. É simples e rápido!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-5"
+                            >
+                                <span class="faq-item__question">O atendimento é sigiloso?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-5" class="faq-item__content" hidden>
+                            <p>
+                                Sim, absolutamente. O sigilo profissional é garantido pelo 
+                                Código de Ética do Psicólogo (CFP) e pela Lei Geral de Proteção de 
+                                Dados (LGPD). Tudo o que conversamos em sessão é estritamente confidencial.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-6"
+                            >
+                                <span class="faq-item__question">Você atende crianças?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-6" class="faq-item__content" hidden>
+                            <p>
+                                Sim! Além de atender adultos, também realizo atendimentos de 
+                                crianças com transtornos do neurodesenvolvimento, identificação 
+                                de possíveis atrasos no desenvolvimento e orientação parental 
+                                para pais que buscam apoio na criação dos filhos.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-7"
+                            >
+                                <span class="faq-item__question">Qual o valor da sessão?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-7" class="faq-item__content" hidden>
+                            <p>
+                                Os valores são informados diretamente pelo WhatsApp, pois podem 
+                                variar de acordo com a modalidade de atendimento (online ou presencial). 
+                                Entre em contato para saber mais sobre investimento e formas de pagamento.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-item__header">
+                            <button 
+                                class="faq-item__trigger" 
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-8"
+                            >
+                                <span class="faq-item__question">Posso remarcar ou cancelar uma sessão?</span>
+                                <span class="faq-item__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </h3>
+                        <div id="faq-answer-8" class="faq-item__content" hidden>
+                            <p>
+                                Sim, você pode remarcar ou cancelar sua sessão com antecedência mínima 
+                                de 24 horas. Cancelamentos em cima da hora ou faltas sem aviso podem 
+                                estar sujeitos à cobrança. Combinamos os detalhes no início do processo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INSTAGRAM ===== -->
+        <section id="instagram" class="instagram" aria-labelledby="instagram-title">
+            <div class="container instagram__container">
+                <div class="instagram__icon" aria-hidden="true">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </div>
+                <h2 id="instagram-title" class="instagram__title">Acompanhe meu dia a dia</h2>
+                <p class="instagram__text">
+                    No Instagram, compartilho reflexões sobre saúde mental, autoconhecimento e bem-estar emocional.
+                </p>
+                <a 
+                    href="https://instagram.com/psikauanyaraujo" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="instagram__link"
+                    aria-label="Seguir @psikauanyaraujo no Instagram (abre em nova aba)"
+                >
+                    @psikauanyaraujo
+                </a>
+            </div>
+        </section>
+
+             <!-- ===== CTA FINAL ===== -->
+        <section id="contato" class="cta-final" aria-labelledby="cta-title">
+            <div class="container cta-final__container">
+                <h2 id="cta-title" class="cta-final__title">Priorize sua saúde mental</h2>
+                <p class="cta-final__text">
+                    O primeiro passo para a mudança é buscar ajuda profissional especializada.
+                    <br>Vamos conversar?
+                </p>
+                <a 
+                    href="https://wa.me/5587988270794?text=Olá,%20Kauany!%20Visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terapêutico." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="btn btn--cta"
+                    aria-label="Ver disponibilidade no WhatsApp (abre em nova aba)"
+                >
+                    <svg class="btn__icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Ver disponibilidade no WhatsApp
+                </a>
+            </div>
+        </section>
+
     </main>
 
-   <footer class="footer">
-    <div class="container footer-content">
-        <div class="footer-brand">
-            <h3>Kauany Araujo</h3>
-            <p>Psicóloga Clínica • CRP 02/30803</p>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <p class="footer__logo">Kauany Araujo</p>
+                    <p class="footer__crp">Psicóloga Clínica • CRP 02/30803</p>
+                    <p class="footer__location">Petrolina-PE | Atendimento Online para todo Brasil</p>
+                </div>
+                
+                <div class="footer__contact">
+                    <h3 class="footer__title">Contato</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <a 
+                                href="https://wa.me/5587988270794" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="WhatsApp (abre em nova aba)"
+                            >
+                                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                (87) 98827-0794
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href="https://instagram.com/psikauanyaraujo" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="Instagram (abre em nova aba)"
+                            >
+                                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                                @psikauanyaraujo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer__legal">
+                    <h3 class="footer__title">Aviso Legal</h3>
+                    <p class="footer__legal-text">
+                        Este site respeita o Código de Ética Profissional do Psicólogo (CFP) e a 
+                        Lei Geral de Proteção de Dados (LGPD). Todas as informações são 
+                        tratadas com total sigilo e proteção.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; <span id="current-year">2025</span> Kauany Araujo Psicologia. Todos os direitos reservados.</p>
+                <p style="font-size: 0.95em; color: #888; margin-top: 0.5em;">
+                    <a href="privacidade.html" style="color: #888; text-decoration: underline;">Política de Privacidade</a>
+                </p>
+                <p style="font-size: 0.9em; color: #888; margin-top: 0.5em;">
+                    Site desenvolvido por <a href="https://github.com/victorltd" target="_blank" rel="noopener">Victor Augusto</a>
+                </p>
+            </div>
         </div>
-        
-        <div class="footer-legal">
-            <p>Este site respeita a Lei Geral de Proteção de Dados (LGPD). As informações enviadas via formulário ou WhatsApp são tratadas com total sigilo e proteção, conforme o Código de Ética Profissional do Psicólogo.</p>
-        </div>
+    </footer>
 
-        <div class="footer-copyright">
-            <p>&copy; 2026 Kauany Araujo Psicologia. Todos os direitos reservados.</p>
-        </div>
-    </div>
-</footer>
+    <!-- ===== WHATSAPP FLUTUANTE ===== -->
+    <a 
+        href="https://wa.me/5587988270794?text=Olá,%20Kauany!%20Visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terapêutico." 
+        class="whatsapp-float" 
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar pelo WhatsApp"
+    >
+        <svg class="whatsapp-float__icon" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-float__text">WhatsApp</span>
+    </a>
 
-    <a href="https://wa.me/558788270794?text=Olá, Kauany! Visitei seu site e gostaria de saber mais sobre o processo terapêutico." class="whatsapp-float" target="_blank">WhatsApp</a>
-
+    <!-- ===== JAVASCRIPT ===== -->
     <script src="assets/js/main.js"></script>
-    
+
+    <!-- ===== SCHEMA.ORG (SEO Estruturado) ===== -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Physician", 
-      "name": "Kauany Araujo Psicologia",
-      "image": "assets/img/Kauany-hero.png",
-      "telephone": "+5587988270794", 
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Online",
-        "addressCountry": "BR"
-      },
-      "medicalSpecialty": "Psychology",
-      "priceRange": "$$"
+        "@context": "https://schema.org",
+        "@type": "Psychologist",
+        "name": "Kauany Araujo",
+        "alternateName": "Kauany Araujo Psicologia",
+        "description": "Psicóloga Clínica especialista em Terapias Contextuais Comportamentais (ACT) para ansiedade, autoconhecimento, regulação emocional e saúde mental. Atendimento online para todo Brasil e presencial em Petrolina-PE.",
+        "image": "https://www.kauanyaraujo.com.br/assets/img/kauany-hero.jpg",
+        "url": "https://www.kauanyaraujo.com.br",
+        "telephone": "+5587988270794",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Petrolina",
+            "addressRegion": "PE",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-9.3891",
+            "longitude": "-40.5028"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Petrolina",
+                "addressRegion": "PE"
+            },
+            {
+                "@type": "Country",
+                "name": "Brasil"
+            }
+        ],
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Professional License",
+            "recognizedBy": {
+                "@type": "Organization",
+                "name": "Conselho Regional de Psicologia - 2ª Região"
+            },
+            "identifier": "CRP 02/30803"
+        },
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Universidade Federal do Vale do São Francisco (UNIVASF)"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "CBI of Miami"
+            }
+        ],
+        "knowsAbout": [
+            "Terapia de Aceitação e Compromisso (ACT)",
+            "Terapias Contextuais Comportamentais",
+            "Ansiedade",
+            "Autoconhecimento",
+            "Regulação Emocional",
+            "Flexibilidade Psicológica",
+            "Orientação Parental",
+            "Neurodesenvolvimento Infantil"
+        ],
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Psicoterapia Individual Online",
+                    "description": "Sessões de psicoterapia online por videochamada para todo o Brasil"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Psicoterapia Individual Presencial",
+                    "description": "Sessões de psicoterapia presencial em Petrolina-PE"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Orientação Parental",
+                    "description": "Acompanhamento e orientação para pais"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Atendimento Infantil",
+                    "description": "Atendimento de crianças com questões do neurodesenvolvimento"
+                }
+            }
+        ],
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            }
+        ],
+        "sameAs": [
+            "https://instagram.com/psikauanyaraujo"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+5587988270794",
+            "contactType": "customer service",
+            "availableLanguage": "Portuguese"
+        }
     }
     </script>
+
+    <!-- ===== FAQ SCHEMA (SEO para Perguntas Frequentes) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Como funcionam as sessões online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "As sessões ocorrem por videochamada em plataforma segura e sigilosa. A eficácia do atendimento online é comprovada cientificamente e oferece a conveniência de realizar a sessão de onde você estiver, mantendo a mesma qualidade do atendimento presencial."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qual a duração do processo terapêutico?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A psicoterapia não tem um tempo fixo, pois cada pessoa tem seu ritmo e necessidades específicas. No entanto, trabalhamos com objetivos claros para que você perceba sua evolução ao longo do tempo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Você aceita planos de saúde?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Atendo de forma particular, mas emito recibos oficiais para que você possa solicitar o reembolso junto ao seu plano de saúde, caso ele ofereça essa modalidade."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Como faço para agendar a primeira consulta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Basta clicar em qualquer botão de agendamento deste site. Você será direcionado para o WhatsApp, onde combinaremos o melhor horário para a primeira conversa."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "O atendimento é sigiloso?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim, absolutamente. O sigilo profissional é garantido pelo Código de Ética do Psicólogo (CFP) e pela Lei Geral de Proteção de Dados (LGPD). Tudo o que conversamos em sessão é estritamente confidencial."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Você atende crianças?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim! Além de atender adultos, também realizo atendimentos de crianças com transtornos do neurodesenvolvimento, identificação de possíveis atrasos no desenvolvimento e orientação parental."
+                }
+            }
+        ]
+    }
+    </script>
+
 </body>
 </html>
