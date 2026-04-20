@@ -473,7 +473,7 @@ strong {
 
 /* Mobile Menu Button */
 .header__mobile-btn {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1477,40 +1477,7 @@ strong {
     margin: 0;
 }
 
-/* ============================================
-   23. WHATSAPP FLUTUANTE
-   ============================================ */
-.whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--color-success);
-    color: #fff;
-    padding: 14px 24px;
-    border-radius: var(--radius-full);
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-    font-weight: 600;
-    font-size: 0.95rem;
-    z-index: 999;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
 
-.whatsapp-float:hover {
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
-}
-
-.whatsapp-float__icon {
-    flex-shrink: 0;
-}
-
-.whatsapp-float__text {
-    display: inline;
-}
 
 /* ============================================
    24. ANIMAÇÕES
@@ -1672,11 +1639,6 @@ strong {
         font-size: 15px;
     }
     
-    /* Header Mobile */
-    .header__mobile-btn {
-        display: flex;
-    }
-    
     .header__nav {
         position: fixed;
         top: 0;
@@ -1740,24 +1702,21 @@ strong {
     body.menu-open::before {
         content: '';
         position: fixed;
-        inset: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        z-index: calc(var(--z-modal-backdrop) + 1);
-        /* Não bloquear cliques — usamos listener no document para fechar o menu */
-        pointer-events: none;
-    }
-
-    .header__nav.is-open {
-        z-index: calc(var(--z-modal-backdrop) + 2) !important;
+        z-index: 1050; /* Modal backdrop z-index */
+        pointer-events: auto;
     }
 
     body.menu-open {
         overflow: hidden;
     }
 
-    /* Garante que o menu fique acima do overlay */
     .header__nav.is-open {
-        z-index: calc(var(--z-modal-backdrop) + 3) !important;
+        z-index: 1100 !important;
         transform: translateX(0);
     }
 
@@ -1839,26 +1798,6 @@ strong {
     .cta-final {
         padding: var(--space-20) 0;
     }
-    
-    /* WhatsApp Float - só ícone em mobile */
-    .whatsapp-float {
-        padding: var(--space-4);
-        bottom: var(--space-6);
-        right: var(--space-6);
-        left: auto;
-        z-index: calc(var(--z-modal-backdrop) + 3);
-        transition: right 0.3s, opacity 0.3s;
-        display: flex;
-    }
-    
-    .whatsapp-float__text {
-        display: none;
-    }
-    
-    .whatsapp-float__icon {
-        width: 28px;
-        height: 28px;
-    }
 }
 
 /* Mobile (max-width: 480px) */
@@ -1872,9 +1811,13 @@ strong {
         display: flex !important;
     }
     
-    /* Garantir que o botão WhatsApp seja sempre visível em mobile (exceto quando menu abre) */
+    /* Garantir que o botão WhatsApp seja sempre visível em mobile */
     .whatsapp-float {
         display: flex !important;
+        padding: 10px 16px;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
     }
     
     .hero__title {
@@ -1985,7 +1928,6 @@ strong {
 /* Print styles */
 @media print {
     .header,
-    .whatsapp-float,
     .btn,
     .instagram,
     .cta-final {
@@ -2007,4 +1949,170 @@ strong {
     section {
         page-break-inside: avoid;
     }
+}
+
+/* ============================================
+   WHATSAPP FLUTUANTE - VERSÃO FINAL CORRIGIDA
+   Deve ficar no FINAL do arquivo CSS
+   ============================================ */
+
+/* Reset - remove qualquer estilo anterior */
+.whatsapp-float,
+.whatsapp-float * {
+    all: revert;
+}
+
+/* Estilos principais */
+.whatsapp-float {
+    /* Posicionamento */
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    
+    /* Display */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    
+    /* Dimensões - Desktop */
+    padding: 14px 24px !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    width: auto !important;
+    height: auto !important;
+    
+    /* Visual */
+    background-color: #25D366 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4) !important;
+    
+    /* Texto */
+    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    
+    /* Interação */
+    cursor: pointer !important;
+    
+    /* Garantir visibilidade */
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    
+    /* Z-index muito alto */
+    z-index: 2147483647 !important; /* Valor máximo possível */
+    
+    /* Transições */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    
+    /* Garante que não seja afetado por transforms de pais */
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+    
+    /* Isolamento de contexto */
+    isolation: isolate !important;
+}
+
+/* Ícone */
+.whatsapp-float__icon {
+    display: block !important;
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0 !important;
+    fill: currentColor !important;
+}
+
+/* Texto */
+.whatsapp-float__text {
+    display: inline !important;
+    white-space: nowrap !important;
+}
+
+/* Hover */
+.whatsapp-float:hover {
+    transform: translateZ(0) scale(1.05) translateY(-2px) !important;
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5) !important;
+}
+
+/* Focus para acessibilidade */
+.whatsapp-float:focus,
+.whatsapp-float:focus-visible {
+    outline: 3px solid #4A90D9 !important;
+    outline-offset: 2px !important;
+}
+
+/* ===== MOBILE: Tablet e menor (768px) ===== */
+@media screen and (max-width: 768px) {
+    .whatsapp-float {
+        /* Reposiciona */
+        bottom: 24px !important;
+        right: 24px !important;
+        
+        /* Formato circular (só ícone) */
+        padding: 16px !important;
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 50% !important;
+        
+        /* Mantém visibilidade */
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 2147483647 !important;
+    }
+    
+    .whatsapp-float__icon {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    
+    /* Esconde o texto em mobile */
+    .whatsapp-float__text {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+    }
+}
+
+/* ===== MOBILE PEQUENO (480px) ===== */
+@media screen and (max-width: 480px) {
+    .whatsapp-float {
+        bottom: 20px !important;
+        right: 20px !important;
+        width: 52px !important;
+        height: 52px !important;
+        padding: 14px !important;
+    }
+    
+    .whatsapp-float__icon {
+        width: 26px !important;
+        height: 26px !important;
+    }
+}
+
+/* ===== GARANTIA: Menu aberto ===== */
+body.menu-open .whatsapp-float {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 2147483647 !important;
+    position: fixed !important;
+}
+
+/* ===== GARANTIA: Qualquer estado ===== */
+.whatsapp-float[style],
+.whatsapp-float:not([hidden]) {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
