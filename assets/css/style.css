@@ -1512,6 +1512,13 @@ strong {
     display: inline;
 }
 
+/* Ocultar botão WhatsApp quando menu está aberto */
+body.menu-open .whatsapp-float {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s;
+}
+
 /* ============================================
    24. ANIMAÇÕES
    ============================================ */
@@ -1847,13 +1854,8 @@ strong {
         right: var(--space-6);
         left: auto;
         z-index: calc(var(--z-modal-backdrop) + 3);
-        transition: right 0.3s;
-    }
-
-    /* Quando o menu está aberto, o botão de WhatsApp fica oculto */
-    body.menu-open .whatsapp-float {
-        opacity: 0;
-        pointer-events: none;
+        transition: right 0.3s, opacity 0.3s;
+        display: flex;
     }
     
     .whatsapp-float__text {
@@ -1870,6 +1872,16 @@ strong {
 @media (max-width: 480px) {
     :root {
         --container-padding: var(--space-4);
+    }
+    
+    /* Garantir que o botão mobile apareça em mobile */
+    .header__mobile-btn {
+        display: flex !important;
+    }
+    
+    /* Garantir que o botão WhatsApp seja sempre visível em mobile (exceto quando menu abre) */
+    .whatsapp-float {
+        display: flex !important;
     }
     
     .hero__title {
