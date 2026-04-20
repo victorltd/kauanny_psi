@@ -1850,9 +1850,10 @@ strong {
         transition: right 0.3s;
     }
 
-    /* Quando o menu está aberto, empurra visualmente o botão de WhatsApp para não ficar escondido pelo menu (apenas efeito visual) */
+    /* Quando o menu está aberto, o botão de WhatsApp fica oculto */
     body.menu-open .whatsapp-float {
-        right: calc(var(--space-6) + 380px);
+        opacity: 0;
+        pointer-events: none;
     }
     
     .whatsapp-float__text {
