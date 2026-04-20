@@ -740,3 +740,4 @@ App.init();
    EXPORTAÇÕES (caso use módulos ES6)
    ============================================ */
 // export { App, MobileMenu, FAQAccordion, Analytics };
+

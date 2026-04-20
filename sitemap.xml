@@ -1,15 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://Kauanyaraujo.com.br/</loc>
-      <lastmod>2026-01-24</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://Kauanyaraujo.com.br/links.html</loc>
-      <lastmod>2026-01-24</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Página Principal -->
+    <url>
+        <loc>https://kauanyaraujo.com.br/</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://kauanyaraujo.com.br/assets/img/kauany-hero.jpg</image:loc>
+            <image:title>Psicóloga Kauany Araujo - CRP 02/30803</image:title>
+            <image:caption>Psicóloga Kauany Araujo especialista em Terapia de Aceitação e Compromisso (ACT) em Petrolina-PE</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://kauanyaraujo.com.br/assets/img/kauany-sobre.jpg</image:loc>
+            <image:title>Sobre a Psicóloga Kauany Araujo</image:title>
+            <image:caption>Kauany Araujo em seu consultório - atendimento humanizado e baseado em ciência</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Página de Links (Linktree) -->
+    <url>
+        <loc>https://kauanyaraujo.com.br/links.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Política de Privacidade -->
+    <url>
+        <loc>https://kauanyaraujo.com.br/privacidade.html</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Seções importantes da página principal (âncoras para SEO) -->
+    <!-- Nota: Algumas engines de busca consideram âncoras, outras não. 
+         Incluímos para máxima cobertura -->
+    
+    <url>
+        <loc>https://kauanyaraujo.com.br/#sobre</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://kauanyaraujo.com.br/#formacao</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://kauanyaraujo.com.br/#processo</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://kauanyaraujo.com.br/#faq</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://kauanyaraujo.com.br/#contato</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
 </urlset>
